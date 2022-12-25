@@ -25,7 +25,7 @@ app.use((error, req, res, next) => {
 mongoose
   .connect(url)
   .then(() => {
-    app.listen(process.env.PORT);
+    app.listen(3001);
     console.log(`Database connected and Running${process.env.PORT}`);
   })
   .catch((err) => {
